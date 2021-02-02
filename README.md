@@ -1,5 +1,5 @@
 # How to use:
-Run the following for use
+Run the following commands for use
 
 ### `npm start`
 For start the project into localhost.
