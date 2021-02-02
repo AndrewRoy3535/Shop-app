@@ -5,5 +5,5 @@ Run the following commands for use
 For start the project into localhost.
 
 ### `npm run build`
-For building the project run the
+For building the project.
 
