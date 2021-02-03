@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Menuitem from "../menu-item/Menuitem";
-import sections from "../../directory-data";
+import SECTIONS from "./directory-data";
 
 import "./directory.scss";
 
@@ -9,7 +9,7 @@ export class directory extends Component {
     super(props);
 
     this.state = {
-      section: sections,
+      section: SECTIONS,
     };
   }
 
