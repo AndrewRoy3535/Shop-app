@@ -15,7 +15,6 @@ function collectionItem({ id, price, name, imageUrl }) {
           <span className='price'>{price}</span>
         </div>
       </div>
-      <div></div>
     </Fragment>
   );
 }
