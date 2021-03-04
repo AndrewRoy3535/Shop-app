@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CustomButton from "../customButton/customButton";
 
 import "./collection-item.scss";
 
@@ -14,6 +15,7 @@ function collectionItem({ id, price, name, imageUrl }) {
           <span className='name'>{name}</span>
           <span className='price'>{price}</span>
         </div>
+        <CustomButton inverted>Add To Cart</CustomButton>
       </div>
     </Fragment>
   );
