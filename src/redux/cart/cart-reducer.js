@@ -12,7 +12,11 @@ export const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         hidden: !state.hidden,
       };
-
+    case cartActionTypes.ADD_CART_ITEM:
+      return {
+        ...state,
+        cartItem: [...state.cartItem, action.payload],
+      };
     default:
       return state;
   }
