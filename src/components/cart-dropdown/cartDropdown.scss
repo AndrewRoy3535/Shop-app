@@ -18,6 +18,12 @@
     overflow: scroll;
   }
 
+  .empty-cart {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
   button {
     margin-top: auto;
   }
