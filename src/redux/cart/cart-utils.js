@@ -27,7 +27,7 @@ export const decreaseItem = (cartItem, itemToRemove) => {
   );
 
   if (exsitingItem.quantity === 1) {
-    return cartItem.filter((cartItem) => cartItem.id === itemToRemove.id);
+    return cartItem.filter((cartItem) => cartItem.id !== itemToRemove.id);
   }
 
   return cartItem.map((cartItem) =>
