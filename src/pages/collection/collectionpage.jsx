@@ -3,9 +3,20 @@ import CollectionItem from "../../components/collection-item/collection-item";
 import { connect } from "react-redux";
 import { selectCollectionId } from "../../redux/shop/shop-selector";
 
+import "./collectionpage.scss";
+
 function collectionpage({ collection }) {
-  console.log(collection);
-  return <div className='collection-page'>Collection Page</div>;
+  const { title, items } = collection;
+  return (
+    <div className='collection-page'>
+      <h2 className='title'>{title}</h2>
+      <div className='items'>
+        {items.map((item) => (
+          <CollectionItem key={item.id} item={item} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 const mapStateToProps = (state, ownProps) => ({
