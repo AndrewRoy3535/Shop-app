@@ -28,4 +28,3 @@ function stripeButton({ price }) {
 }
 
 export default stripeButton;
-// image = "https://stripe.com/img/documentation/checkout/marketplace.png";
