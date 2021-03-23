@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 import "./Menuitem.scss";
 
 function Menuitem({ title, imageUrl, size, linkUrl, match, history }) {
-  console.log(history);
   return (
     <div
       className={`${size} menu-item`}

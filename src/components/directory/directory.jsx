@@ -7,7 +7,6 @@ import { selectDirectorySection } from "../../redux/directory/directory-selector
 import { createStructuredSelector } from "reselect";
 
 const Directory = ({ section }) => {
-  console.log(section);
   return (
     <div className='directory-menu'>
       {section.map(({ title, imageUrl, id, size, linkUrl }) => (
